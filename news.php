@@ -2,7 +2,7 @@
 include ('top.php');
 ?>
 <main>
-    <h2>Home<h2>
+    <h2>News<h2>
 </main>
 
 <?php
@@ -10,4 +10,4 @@ include ('footer.php');
 ?>
 
 </body>
-</html> </html>
+</html>

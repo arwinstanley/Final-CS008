@@ -16,5 +16,17 @@ $path_parts = pathinfo($phpSelf);
 
         <link rel="stylesheet" href="../css/custom.css?version=1.0" type="text/css" media="screen">
         <?php
-        include 'header.php';
-        ?>
+    print '<body id="' . $path_parts['filename'] . '">' . PHP_EOL;
+
+    include 'header.php';
+    print PHP_EOL;
+
+    include 'nav.php';
+    print PHP_EOL;
+
+    if ($debug) {
+        print '<p>DEBUG MODE IS ON</p>';
+    }
+
+    print "<!-- End of top.php -->";
+    ?>
