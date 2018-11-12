@@ -10,9 +10,9 @@ $file=fopen("country.csv", "r");
 
 if($debug){
     if($file){
-       print '<p>File Opened Succesful.</p>';
+      // print '<p>File Opened Succesful.</p>';
     }else{
-       print '<p>File Open Failed.</p>';
+      // print '<p>File Open Failed.</p>';
      }
 } 
 
@@ -144,12 +144,8 @@ if($debug){
   </div>
 </div>
     
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p>By creating an account you agree to our <a href="terms.php">Terms & Privacy</a>.</p>
     <button type="submit" class="registerbtn">Register</button>
-  </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 </form>
 </main>

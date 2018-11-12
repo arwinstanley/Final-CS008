@@ -6,11 +6,11 @@ $path_parts = pathinfo($phpSelf);
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Save the Blue Whales</title>
+        <title>Save the Sea Otters</title>
 
         <meta charset="utf-8">
         <meta name="author" content="Shauna Kimura, Alex Winstanley, Rachel Liston">
-        <meta name="description" content="Save the Blue Whales Final Project">
+        <meta name="description" content="Save the Sea Otters Final Project">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
