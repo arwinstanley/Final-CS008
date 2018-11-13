@@ -10,11 +10,11 @@ $path_parts = pathinfo($phpSelf);
 
         <meta charset="utf-8">
         <meta name="author" content="Shauna Kimura, Alex Winstanley, Rachel Liston">
-        <meta name="description" content="Save the Sea Otters Final Project">
+        <meta name="description" content="CS008 Final Project">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="../css/custom.css?version=1.0" type="text/css" media="screen">
+        <link rel="stylesheet" href="../cssfinalproject/custom.css?version=1.0" type="text/css" media="screen">
+        
         <?php
     print '<body id="' . $path_parts['filename'] . '">' . PHP_EOL;
 
