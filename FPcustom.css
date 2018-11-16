@@ -1,0 +1,88 @@
+
+header{
+    text-align: center;
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    background-color: #b28a72;
+    color: lightblue;
+    font-size: 20pt;
+}
+
+nav {
+    background-color: #b1c4ce;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 2px solid #5b707c;
+    padding-left: 10em;
+}
+
+/*added for lab8*/
+nav li{
+    width: 6em;
+}
+
+nav ol{
+    padding-left: 0;
+}
+
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 3em;
+}
+
+nav a:link{
+    /* == I did not like the look of a background color on the nav links == */
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: #eaf4f9;
+}
+
+.activePage{
+    background-color: #d9ebf9;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 0.3em grey;
+    margin-right: 2em;
+    padding-left: 0.5em;
+}
+
+body{
+    font: 14pt Century Gothic,Helvetica,sans-serif;
+    margin: auto;
+    width: 90%;
+    background-color: #eaf4f9;
+}
+
+footer{
+    clear: both;
+}
+
+/*end of lab8 add on*/
+
+tr:nth-child(even){
+    background-color: #dee2e8;
+}
+
+tr:hover{
+    background-color: #dbe7f9;
+}
+
+/* ===================  Custom Section  ==================================== */
+.roundedCornersSmall{
+    border-radius: 0.4em;    
+}
+
+.fiftyPercent {
+    padding: 1em;
+    width: 25%;
+    text-align: center;
+ 
+}
+
