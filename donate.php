@@ -324,10 +324,10 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         <input type="text" name="txtPhone" id="txtPhone">
         <hr>
         
-        <label for="shareInfo">Would you like us to share your information(i.e. email lists and newsletters)</label>
+        <label for="shreInfo">Would you like us to share your information(i.e. email lists and newsletters)</label>
      
-        <label for="yes"<input type="radio" name="yes" id="yes" value="on" checked="checked">Yes</label>
-        <label for="no"<input type="radio" name="no" id="no" value="off">No</label>
+        <input type="radio" name="shareInfo" id="yes" value="on" checked="checked"> Yes
+        <input type="radio" name="shareInfo" id="no" value="off"> No
         
     </fieldset> <!-- ends contact -->
      
@@ -343,10 +343,10 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         
         <textarea id="txtComments" name="txtComments"></textarea>
            
-    </fieldset
+    </fieldset>
     
     <fieldset class="billing">
-         <legend>Billing Information</legend>
+        <legend>Billing Information</legend>
         
         <label for="country">Country</label>
         
