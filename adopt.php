@@ -223,7 +223,7 @@ if (isset($_POST["btnSubmit"])) {
         $cc = '';
         $bcc = '';
         
-        $from = 'customerservice@savetheseaotters.org';  
+        $from = 'skimura@uvm.edu';  
       
         // subject of mail should make sense to your form
         $subject = 'Adoption Confirmation: ';
@@ -252,7 +252,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
     // to display the form.
     
     if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked with: end body submit
-        print '<h2>Thank you for providing your information.</h2>';
+        print '<h2>Thank you for adopting!</h2>';
     
         print '<p>For your records a copy of this data has ';
         if (!$mailed) {
@@ -262,7 +262,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         print 'been sent:</p>';
         print '<p>To: ' . $email . '</p>';
     
-        print $message;
+        
     } else {       
      print '<h2>Adopt</h2>';
      //print '<p class="form-heading">Your information will greatly help us with our research.</p>';
@@ -315,18 +315,21 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         
         <label for="txtFirstName">First Name</label>
         <input type="text" name="txtFirstName" id="txtFirstName">
+        <hr>
 
         <label for="txtEmail">Email</label>
         <input type="text" name="txtEmail" id="txtEmail">
+        <hr>
         
         <label for="txtPhone">Phone</label>
         <input type="text" name="txtPhone" id="txtPhone">
+        <hr>
         
         
     </fieldset> <!-- ends contact -->
     
     <fieldset class="seaOtterSelector">
-        <legend>Choose Your Sea Otter</legend>
+        <legend>Select a Sea Otter</legend>
         <div class="grid">
             <label for="potter">Potter
                 <input type="radio" name="seaotter" id="potter">
@@ -384,21 +387,27 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
             }
         ?>
         </select>
+        <hr>
         
         <label for="address1">Address 1</label>
         <input type="text" name="address" id="address1">
+        <hr>
        
         <label for="address2">Address 2</label>
         <input type="text" name="address" id="address2">
+        <hr>
         
         <label for="city">City</label>
         <input type="text" name="city" id="city">
+        <hr>
         
         <label for="region">State/Province/Region</label>
         <input type="text" name="region" id="region">
+        <hr>
         
         <label for="zip">Zip Code</label>
         <input type="text" name="zip" id="zip">
+        <hr>
         
         <label>
             <input type="checkbox" checked="checked" name="sameadr"> Shipping and billing address are the same
@@ -409,9 +418,11 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         <legend>Payment</legend>
         <label class="required" for="cardname">Name on Card</label>
         <input type="text" name="cardname" id="cardname">
+        <hr>
         
         <label class="required" for="cardnum">Card Number</label>
         <input type="text" name="cardnum" id="cardnum">
+        <hr>
         
         <label class="required" for="exp">Expiration</label>
         <select name="exp" id="exp">
@@ -428,13 +439,13 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
             }
             ?>
         </select>
-
+        <hr>
             
         <label class="required" for="cvv">CVV</label>
         <input type="text" name="cvv" id="cvv">
     </fieldset> 
  
-    <p>By creating an account you agree to our <a href="terms.php">Terms & Privacy</a>.</p>   
+    <p>By adopting you agree to our <a href="terms.php">Terms & Privacy</a>.</p>   
     <input class = "button" id = "btnSubmit" name = "btnSubmit" tabindex = "900" type = "submit" value = "Adopt" >
 
 
