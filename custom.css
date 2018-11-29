@@ -1,0 +1,143 @@
+/*CSS by Shauna Kimura, Rachel Liston*/
+
+/* ===================  Standard Items  ==================================== */
+
+html, body{
+    margin: 2em;
+    border: 0.5em;
+    padding: 1em;
+}
+html{
+    background: url("../images/ocean.png") no-repeat center center fixed;
+    background-size: cover;
+}
+body{
+    font-family: Open Sans,sans-serif;
+    font-size: 14pt;
+    margin: auto;
+    width: 90%;
+    background-color: #eaf4f9;
+}
+
+fieldset{
+    border: 2px solid;
+    border-radius: 5px;
+    clear: both;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+footer{
+    clear: both;
+}
+
+
+header{
+    text-align: center;
+    font-family: Century Gothic;
+    background-color: #b28a72;
+    color: lightblue;
+    font-size: 20pt;
+}
+
+hr{
+    visibility: hidden;
+}
+
+label {
+    padding-right: 1em;
+} 
+
+/* =======================  Navigation  ==================================== */ 
+
+nav {
+    background-color: #b1c4ce;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 2px solid #5b707c;
+    padding-left: 10em;
+}
+
+nav li{
+    width: 6em;
+}
+
+nav ol{
+    padding-left: 0;
+}
+
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 3em;
+}
+
+nav a:link{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: #eaf4f9;
+}
+
+.activePage{
+    background-color: #d9ebf9;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 0.3em grey;
+    margin-right: 2em;
+    padding-left: 0.5em;
+}
+
+tr:nth-child(even){
+    background-color: #dee2e8;
+}
+
+tr:hover{
+    background-color: #dbe7f9;
+}
+
+/* ===================  Custom Section  ==================================== */
+
+/*grid layout of images*/
+.grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: center;
+}
+
+/*format of grid images*/ 
+.grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*hides radio buttons for images*/
+.seaOtterSelector label > input{
+    visibility: hidden;
+    position: absolute;  
+} 
+
+/*changes cursor when hovering images*/
+label > input + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/*changes format of image when selected*/
+label > input:checked + img{
+    border: 2px solid grey;
+}
+
+.grid label{
+    text-align: center;
+    display: inline-block;
+}
