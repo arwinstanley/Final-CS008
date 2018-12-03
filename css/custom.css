@@ -1,14 +1,31 @@
 /*CSS by Shauna Kimura, Rachel Liston*/
 
-/* ===================  Standard Items  ==================================== */
-html{
-    background-color: whitesmoke;
+/*   Standard Items */
+
+h2 {
+    font-family: Open Sans,sans-serif;
+    color: #5b707c;
+    font-style: normal;
 }
+
 body{
-    font: 14pt Century Gothic,Helvetica,sans-serif;
+    font-family: Open Sans,sans-serif;
+    font-size: 14pt;
     margin: auto;
     width: 90%;
-    background-color: #eaf4f9;
+    background-color: whitesmoke;
+    text-align: left;
+
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    
 }
 
 fieldset{
@@ -27,76 +44,88 @@ footer{
 header{
     text-align: center;
     font-family: Century Gothic;
-    background-color: #b28a72;
+    background-color:#b28a72;
     color: lightblue;
     font-size: 20pt;
+    top: 0;
+    width: 100%
 }
 
 hr{
     visibility: hidden;
 }
 
+img {
+    opacity: 1.0;
+}
+
 label {
     padding-right: 1em;
 } 
 
-/* =======================  Navigation  ==================================== */ 
-
-nav {
-    background-color: #b1c4ce;
-    padding: 0.3em;
-    border-radius: 5px;
-    border: 2px solid #5b707c;
-    padding-left: 10em;
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-top: 30px;
 }
 
-nav li{
-    width: 6em;
+/* Navigation */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
 }
 
-nav ol{
-    padding-left: 0;
-}
-
-nav ol li{
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 3em;
-}
-
-nav a:link{
-    color: black;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-nav a:hover{
-    text-decoration: underline;
-    background-color: #eaf4f9;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-.activePage{
-    background-color: #d9ebf9;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    box-shadow: 0.3em 0.3em 0.3em grey;
-    margin-right: 2em;
-    padding-left: 0.5em;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-tr:nth-child(even){
-    background-color: #dee2e8;
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    opacity: .45;
+    position: sticky;
 }
 
-tr:hover{
-    background-color: #dbe7f9;
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
-/* ===================  Custom Section  ==================================== */
+/* Custom Section */
 
 /*grid layout of images*/
-.grid { 
+#grid { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
@@ -105,11 +134,12 @@ tr:hover{
 }
 
 /*format of grid images*/ 
-.grid img {
+#grid img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     max-width: 100%;
     border-radius: 5px;
+    size: medium;
 }
 
 /*hides radio buttons for images*/
@@ -125,7 +155,28 @@ label > input + img{
 }
 
 /*changes format of image when selected*/
-label > input:checked + img{
+#grid input:checked + img{
     border: 2px solid grey;
 }
+#grid label{
+    text-align: center;
+}
 
+.roundedCornersSmall{
+    border-radius: .4em;
+    max-width: 100%;
+    height: 400px;
+}
+
+.button {
+    background-color: tan;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 32px;
+}
+
+.button:hover {
+    cursor: pointer;
+   
+}

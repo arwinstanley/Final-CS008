@@ -1,6 +1,7 @@
-<!-- ######################     Main Navigation   ########################## -->
-<nav>
-    <ol>
+<!-- Main Navigation -->
+<nav id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <?php
         print '<li class="';
         if ($path_parts['filename'] == "index") {
@@ -41,7 +42,7 @@
         print '">';
         print '<a href="gallery.php">Gallery</a>';
         print '</li>';
-        
+
         print '<li class="';
         if ($path_parts['filename'] == "news") {
             print ' activePage ';
@@ -50,5 +51,5 @@
         print '<a href="news.php">News</a>';
         print '</li>';
         ?>
-    </ol>
+ 
 </nav>
