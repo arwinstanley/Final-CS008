@@ -241,7 +241,8 @@ if (isset($_POST["btnSubmit"])) {
 print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
 //
 ?>       
-<main>     
+<main id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Menu </button>
     <article>
 <?php
     //####################################
@@ -328,9 +329,8 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         
     </fieldset> <!-- ends contact -->
     
-    <fieldset class="seaOtterSelector">
+    <fieldset class="seaOtterSelector" id="grid">
         <legend>Select a Sea Otter</legend>
-        <div class="grid">
             <label for="potter">Potter
                 <input type="radio" name="seaotter" id="potter">
                 <img src="images/potter.jpg" alt="Potter" class="fiftyPercent">
@@ -355,7 +355,6 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                 <input type="radio" name="seaotter" id="scooby">
                 <img src="images/scooby.jpg" alt="Scooby" class="fiftyPercent">
             </label>
-       </div>
     </fieldset>
      
     <fieldset class="donationAmount">
