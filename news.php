@@ -27,7 +27,7 @@ while (!feof($file)) {
     $links[] = fgetcsv($file);
 }
 
-$file = fopen("python/headlines.csv", "r");
+$file = fopen("python/headlines.txt", "r");
 
 if ($debug) {
     if ($file) {
@@ -57,9 +57,11 @@ while (!feof($file)) {
 
 fclose($file);
 ;
+
 include ('top.php');
 ?>
 <main id="main">
+
     <button class="openbtn" onclick="openNav()">&#9776; Menu </button>
     <h2>Climate</h2>
     <article>Climate change is harmful to Sea Otters and marine species. Increase in water temperature, increase in ocean acidity, and severe storms which can pollute coastal waters are all results of climate change. Extreme weather can cause damage to coral reefs, other costal systems, and coastal communities. As ocean temperatures rise, marine species migrate to cooler waters and lose their homes. Rising temperatures can directly disturb the metabolism, life cycle, and behavior of marine species. Check out New York Times articles below to learn how climate change not only affects the lives of Sea Otters and marine life.</article>

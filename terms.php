@@ -48,7 +48,7 @@ include ('top.php');
 
 <h2>Limitation of liability</h2>
 
-<p>In no event shall SeaOttersInc, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  SeaOttersInc, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+<p>In no event shall SeaOttersInc, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  SeaOttersInc, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
 
 <h2>Indemnification</h2>
 

@@ -41,14 +41,14 @@ $url = "images";
 
 //This array has all our images in it
 $images = getFileList($url);
-
+?>
+<?php
 include('top.php');
 ?>
 
-
 <main id="main">
 
-   
+
     <button class="openbtn" onclick="openNav()">&#9776; Menu</button> 
     <h2>Gallery</h2>
 
