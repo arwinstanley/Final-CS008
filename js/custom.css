@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+/*CSS by Shauna Kimura, Rachel Liston*/
+
+/*   Standard Items */
+
+h2 {
+    font-family: 'Roboto Condensed',serif;
+    color: #5b707c;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Roboto Condensed', serif;
+    font-size: 14pt;
+    margin: auto;
+    width: 75%;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+html {
+    background: url("../images/ocean.png")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    float: right;
+    margin-left: 1em; 
+    margin-bottom: 1em;
+}
+//CSS for the Donate page (form)//
+
+
+fieldset{
+    border-radius: 0.5em;
+    margin: 0.5em;
+    border: 2px solid;
+    margin-bottom: 2em;
+}
+
+legend{
+    text-transform: uppercase;
+    background-color: #b1c4ce;
+    border: 1px solid #5b707c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+label{
+    color: black;
+    display: block;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+input{
+    box-sizing: border-box;
+    border: 2px solid #C2C2C2;
+    box-shadow: 2px 2px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 1em;
+    margin-top: 0.3em;
+}
+
+input:focus{
+    border: 1px solid #0C0;
+}
+
+input[type=submit]{
+    background: #b1c4ce none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #dadada;
+    color: #fff;
+    width: 100%;
+}
+
+.buttons legend{
+    display: none;
+}
+
+.form-heading{
+    border-bottom: 2px solid #b1c4ce;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1.75em;
+    padding-bottom: 0.4em;
+}
+
+.text-field{
+    width: 100%;
+}
+
+/* style the errors in the form so they are visible */
+.mistake {
+    color: #fff;
+    background-color: #800;
+    border: thin solid #000;
+}
+
+#errors ol li{
+    color: #ff5555;
+}
+
+/* lab 11*/
+input,
+textarea,
+select{
+    box-sizing: border-box;
+    border: 2px solid #C2C2C2;
+    box-shadow: 2px 2px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border: 1px solid #0C0;
+}
+
+footer{
+    clear: both;
+}
+
+p {
+    text-indent: 1em;
+    padding: 0.5em;
+}
+
+header{
+    text-align: left;
+    font-family: 'Roboto Condensed',serif;
+    color: lightblue;
+    font-size: 25pt;
+    top: 0;
+    width: 100%;
+    margin-top: 1em;
+    padding-top: 0.01em;
+}
+
+hr{
+    visibility: hidden;
+}
+
+img {
+    opacity: 1.0;
+}
+
+label {
+    padding-right: 1em;
+} 
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-top: 30px;
+}
+
+/* Navigation */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    opacity: .45;
+    position: sticky;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Custom Section */
+
+/*grid layout of images*/
+#grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*format of grid images*/ 
+#grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*hides radio buttons for images*/
+.seaOtterSelector label > input{
+    visibility: hidden;
+    position: absolute;  
+} 
+
+/*changes cursor when hovering images*/
+label > input + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/*changes format of image when selected*/
+#grid input:checked + img{
+    border: 2px solid grey;
+}
+#grid label{
+    text-align: center;
+}
+
+.roundedCornersSmall{
+    border-radius: .4em;
+    max-width: 100%;
+    height: 400px;
+}
+
+.button {
+    background-color: tan;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 32px;
+}
+
+.button:hover {
+    cursor: pointer;
+   
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    padding-right: 1em;
+}
+
+.picsofus {
+    width: 350px;
+}
+
+figcaption {
+    text-align: left;
+}
